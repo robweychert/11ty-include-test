@@ -1,0 +1,4 @@
+{% assign posts = collections.post | reverse %}
+{% for post in posts %}
+{{ post.data.content }}
+{% endfor %}
